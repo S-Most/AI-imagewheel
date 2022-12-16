@@ -6,20 +6,20 @@ const conf = new Configuration({
 const openai = new OpenAIApi(conf);
 
 const generateImage = async (req, res) => {
-    const { prompt, n } = req.body;
+    const { prompt, num } = req.body;
 
     try {
         const response = await openai.createImage({
             prompt,
-            n,
+            n: parseInt(num, 10),
             size: "256x256",
         });
 
-        const imageUrl = response.data.data[0].url;
+        const dataObject = response.data.data;
 
         res.status(200).json({
             success: true,
-            data: imageUrl,
+            data: dataObject,
         });
     } catch (err) {
         if (err.response) {

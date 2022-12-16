@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI images!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="prompt">Prompt</label>
+            <input type="text" id="prompt">
+        </div>
+        <div>
+            <label for="num">Number</label>
+            <input type="number" id="num">
+        </div>
+        <input type="submit" value="Generate!">
+    </form>
+    <div class="container">
+        <div class="icon">
+            <div class="imgBox" style="--x:0;" data-id="bob">
+                <img src="assets/bob.jpg" alt="bob">
+            </div>
+            <div class="imgBox" style="--x:1;" data-id="nadine">
+                <img src="assets/nadine.png" alt="nadine">
+            </div>
+            <div class="imgBox" style="--x:2;" data-id="joris">
+                <img src="assets/joris.jpg" alt="joris">
+            </div>
+            <div class="imgBox active" style="--x:3;" data-id="sander">
+                <img src="assets/sander.jpg" alt="sander">
+            </div>
+            <div class="imgBox" style="--x:4;" data-id="naomi">
+                <img src="assets/naomi.jpg" alt="naomi">
+            </div>
+            <div class="imgBox" style="--x:5;" data-id="thomas">
+                <img src="assets/thomas.jpg" alt="thomas">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="contentBox" id="bob">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/bob.jpg" alt="bob">
+                    </div>
+                    <div class="textBox">
+                        <h2>Bob</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBox" id="nadine">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/nadine.png" alt="nadine">
+                    </div>
+                    <div class="textBox">
+                        <h2>Nadine</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBox" id="joris">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/joris.jpg" alt="joris">
+                    </div>
+                    <div class="textBox">
+                        <h2>Joris</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBox active" id="sander">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/sander.jpg" alt="sander">
+                    </div>
+                    <div class="textBox">
+                        <h2>Sander</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBox" id="naomi">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/naomi.jpg" alt="naomi">
+                    </div>
+                    <div class="textBox">
+                        <h2>Naomi</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBox" id="thomas">
+                <div class="card">
+                    <div class="imageBox">
+                        <img src="assets/thomas.jpg" alt="thomas">
+                    </div>
+                    <div class="textBox">
+                        <h2>Thomas</h2>
+                        <h4>Focussed on Growth</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
