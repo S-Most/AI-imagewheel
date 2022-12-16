@@ -14,6 +14,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 form {
@@ -92,7 +93,7 @@ input[type="submit"] {
     transition: 0.5s;
     border: 1px solid black;
     rotate: calc(360deg / var(--aantal) * var(--x));
-    transform: translateX(min(300px, 37vw));
+    transform: translateX(min(300px, 41vw));
     cursor: pointer;
     box-shadow: 
         0 0 0 2px black,

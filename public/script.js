@@ -85,6 +85,7 @@ document.forms[0].addEventListener("submit", onSubmit);
 window.localStorage.setItem("aantal", 0);
 // Styling voor component
 
-// icons.forEach((icon) => {
-//     icon.addEventListener("mouseenter", toggleActive);
-// });
+const icons = document.querySelectorAll(".imgBox");
+icons.forEach((icon) => {
+    icon.addEventListener("mouseenter", toggleActive);
+});
